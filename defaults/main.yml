@@ -16,22 +16,6 @@ nzbget_docker_additional_options:
 
 nzbget_config:
   - MainDir="/downloads"
-  - DestDir="${MainDir}"
-  - InterDir="${MainDir}/Intermediate/Incomplete"
-  - NzbDir="${MainDir}/Intermediate/Watch"
-  - QueueDir="${MainDir}/Intermediate/Queue"
-  - TempDir="${MainDir}/Intermediate/Temp"
   - ScriptDir="/config/scripts"
   - LockFile="/config/nzbget.lock"
   - LogFile="/config/nzbget.log"
-  - ControlUsername=""
-  - ControlPassword=""
-  - DupeCheck="no"
-  - PostStrategy="sequential"
-  - ReorderFiles="yes"
-  - DownloadRate=11000
-  - ParPauseQueue="yes"
-  - DirectRename="yes"
-  - UnpackPauseQueue="yes"
-  - DirectUnpack="yes"
-  - ScriptPauseQueue="yes"
