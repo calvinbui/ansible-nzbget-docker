@@ -22,7 +22,7 @@ N/A
 
 `nzbget_environment_variables`: Docker environmental variables
 
-`nzbget_config`: Options to change in NZBGet configuration file
+`nzbget_config`: Options to change in configuration file
 
 ## Dependencies
 
@@ -34,7 +34,7 @@ N/A
 - hosts: servers
   become: true
   roles:
-   - role: calvinbui.ansible_nzbget
+   - role: calvinbui.ansible_nzbget_docker
 ```
 
 ## License
