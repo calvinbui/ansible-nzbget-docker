@@ -9,7 +9,7 @@ nzbget_download_directory: /tmp/nzbget/downloads
 nzbget_environment_variables:
   PUID: "1000"
   PGUID: "1000"
-  TZ: Sydney/Australia
+  TZ: Australia/Sydney
 
 nzbget_docker_additional_options:
   restart_policy: unless-stopped
