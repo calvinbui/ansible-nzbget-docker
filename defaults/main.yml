@@ -15,7 +15,7 @@ nzbget_docker_additional_options:
   restart_policy: unless-stopped
 
 nzbget_config:
-  - MainDir=/downloads
-  - ScriptDir=/config/scripts
-  - LockFile=/config/nzbget.lock
-  - LogFile=/config/nzbget.log
+  MainDir: '/downloads'
+  ScriptDir: '/config/scripts'
+  LockFile: '/config/nzbget.lock'
+  LogFile: '/config/nzbget.log'

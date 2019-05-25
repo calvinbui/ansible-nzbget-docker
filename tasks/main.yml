@@ -32,7 +32,7 @@
 - name: Configure NZBget
   lineinfile:
     dest: "{{ nzbget_config_directory }}/nzbget.conf"
-    regexp: "^{{ item.split('=')[0] }}="
-    line: "{{ item }}"
-  loop: "{{ nzbget_config }}"
+    regexp: "^{{ item.key }}="
+    line: "{{ item.key }}={{ item.value }}"
+  loop: "{{ lookup('dict', nzbget_config) }}"
   notify: Restart NZBGet
