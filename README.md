@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.com/calvinbui/ansible-nzbget-docker.svg?branch=master)](https://travis-ci.com/calvinbui/ansible-nzbget-docker)
+![GitHub release](https://img.shields.io/github/release/calvinbui/ansible-nzbget-docker.svg)
+![Ansible Quality Score](https://img.shields.io/ansible/quality/40532.svg)
+![Ansible Role](https://img.shields.io/ansible/role/d/40532.svg)
+
 # Ansible NZBGet
 
 NZBGet in Docker
