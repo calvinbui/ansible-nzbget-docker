@@ -24,10 +24,9 @@
   docker_container: "{{ nzbget_container_parameters | combine(nzbget_docker_additional_options) }}"
   register: nzbget_container
 
-- name: Wait for NZBGet start
+- name: Wait for NZBGet config
   wait_for:
-    port: "{{ nzbget_ports[0].split(':')[0] }}"
-    host: "{{ nzbget_container.container.NetworkSettings.IPAddress }}"
+    port: "{{ nzbget_config_directory }}/nzbget.conf"
 
 - name: Configure NZBget
   lineinfile:
